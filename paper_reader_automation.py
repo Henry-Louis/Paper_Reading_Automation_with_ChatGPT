@@ -88,7 +88,7 @@ def create_html_from_json_files(output_dir):
     html_content += "</body></html>"
 
     # Write HTML content to file
-    with open(os.path.join(output_dir, "summary.html"), 'w') as html_file:
+    with open(os.path.join(output_dir, "summary.html"), 'w', encoding="utf-8") as html_file:
         html_file.write(html_content)
 
     print("HTML file created at:", os.path.join(output_dir, "summary.html"))
